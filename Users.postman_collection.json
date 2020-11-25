@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "ab93556f-2c80-40e1-86e3-8338d8b1e829",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/users/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/user/get",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						"get"
+					]
+				},
+				"description": "fetch the list of users"
+			},
+			"response": []
+		},
+		{
+			"name": "/user/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "demouser21",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "demouser21@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/user/create",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				},
+				"description": "create a news user"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
